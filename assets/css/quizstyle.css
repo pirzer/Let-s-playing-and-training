@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */ 
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cardo&family=Fjalla+One&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@300&family=Manrope:wght@300&family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela&family=Zen+Kaku+Gothic+New&display=swap');
+
+
+body {
+background-color: dodgerblue;
+    background-image: /* url(images/bcgrnd_3000x2000.jpg); */
+    background-size: 10%;
+}
+
+main {
+width: 60%;
+margin: auto;    
+}
+
+header {
+    
+}
+
+h1 {
+    font-size: 4em;
+    color: yellow;
+    text-align: center;
+    font-family: inherit;
+    background-color:  rgba(6, 8, 103, 0.4);
+    padding: 1%;
+    animation-name: dropin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    
+}
+
+section {
+    background-color: #9cc4bf; /* changed from antiquewhite to #9cc4bf */
+    padding: 1%;
+    border: thin black solid;
+}
+
+section img {
+    width: 35%;
+    margin-left: 35%; /* 100-30 = 70 / 2 = 35% */
+        animation-name: dropin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    
+}
+
+h2 {
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(255, 127, 40, 0.7);
+  
+}
+
+button:hover {
+    background-color: rgba(130,255,188,.5);
+}
+
+button:hover {
+    
+    background-color: rgba(130,255,188,.5)
+}
+
+button:active {
+    background-color: antiquewhite;
+    color:antiquewhite;
+    
+}
+
+#submitAnswers button {
+    color: white;
+    background-color: darkorchid;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 25%; /* 100 - 50 = 50 / 2 = 25 */
+    border-radius: 12px;
+}
+
+#submitAnswers button:hover {
+    background-color: rgba(131, 254, 255, 0.76);
+
+}
+
+
+#results {
+    background-color: black;
+    color:azure;
+    font-family: monospace;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 12px;
+}
+
+
+@keyframes dropin {
+    0% {
+        transform: translateY(-200%);
+    }
+    
+    75% {
+        transform: translateY(50%);
+        }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
