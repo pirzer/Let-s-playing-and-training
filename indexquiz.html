@@ -12,7 +12,8 @@
     <div class="home_box custom_box">
    	    <h3>Welcome to Know more About Yourself</h3>
    	    <h4>Total Questions: <span class="total_question"></span></h4>
-            <form class="form1" id="form1" onclick="WelcomeNickName();"> <!--  onclick="WelcomeNickName()" -->
+        <div id="alert" style="color: green"></div>    
+        <form class="form1" id="form1" onclick="WelcomeNickName();"> <!--  onclick="WelcomeNickName()" -->
                 <div class="form1_group" id="group_user">  <!-- class="form1_group-ok or form1_group-nok" -->
                     <label for="input_user" class="form1_label">Enter Nickname below</label><br>
                             <div class="form1_group-input">
@@ -24,7 +25,6 @@
                     <p class="form1_input-error">User name must contain only letters, numbers, or the underscore character</p>
                     </div>
                                  
-                <div id="alert" style="color: darkgreen"></div>    
                 </div>
             </form>   	           
         <button type="button" class="btn" id="btnEnter" onclick="startQuiz();validateForm();">Play Quiz </button>
