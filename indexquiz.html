@@ -1,60 +1,163 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>How Well do you know Cats?</title>
-    <link href="assets/css/quizstyle.css" rel="stylesheet" type="text/css">
-    <script src="assets/JS/simple.js" type="text/jscript"></script>
-    </head>
-    
+	<title>Training & Learning Quiz Online</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- form_input class=w3-input w3-border w3-round-large -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/random_style.css">
+</head>
 <body>
-<main>
-<header><h1>How well do you know code of business ethics</h1></header>
     
-<section id="q1">
-    <img src="./assets/image/q1aa.jpg" alt="responsible of ethic">
-    <h2>Who is responsible for ethics in an organisation?</h2>
-    <p><button onclick="quiz('wrong');">Employees</button></p>
-    <p><button onClick="quiz('wrong')">HR</button></p>
-    <p><button onclick="quiz('wrong')">Senior Management</button></p>
-    <p><button onclick="quiz('right')">All of the above.</button></p>
-</section>
+    <div class="home_box custom_box">
+   	    <h3>Welcome to Know more About Yourself</h3>
+   	    <h4>Total Questions: <span class="total_question"></span></h4>
+            <form class="form1" id="form1" onclick="WelcomeNickName();"> <!--  onclick="WelcomeNickName()" -->
+                <div class="form1_group" id="group_user">  <!-- class="form1_group-ok or form1_group-nok" -->
+                    <label for="input_user" class="form1_label">Enter Nickname below</label><br>
+                            <div class="form1_group-input">
+                            <input type="text" class="form1_input" name="input_user" id="input_user" placeholder="Nickname" />
+                                <input type="button" value="Submit" />
+                                <i class="form1_validation-status fas fa-times-circle"></i>
+                                <br>
+                                <br>
+                    <p class="form1_input-error">User name must contain only letters, numbers, or the underscore character</p>
+                    </div>
+                                 
+                <div id="alert" style="color: darkgreen"></div>    
+                </div>
+            </form>   	           
+        <button type="button" class="btn" id="btnEnter" onclick="startQuiz();validateForm();">Play Quiz </button>
+
+  
+    </div>
+
+    <!-- Timer option --> 
+    <div class="time_box custom_box">  
+       <span id="countdown" class="timer"></span>   
+    </div>
     
-<section id="q2">
-    <img src="./assets/image/business_ethics.jpg" alt="code of ethic meaning">
-    <h2>What is the definition of ethics?</h2>
-    <p><button onclick="quiz('wrong')">A set of classroom laws</button></p>
-    <p><button onclick="quiz('wrong')">Telling the truth 55% of the time</button></p>
-    <p><button onclick="quiz('right')">A set of moral principles.</button></p>
-    <p><button onclick="quiz('wrong')">A set of criminal laws</button></p>
-</section>
+    <!-- Timer option --> 
 
-<section id="q3">
-    <img src="./assets/image/code_of_ethics.jpg" alt="code of ethic meaning">
-    <h2>Business Code of Ethics:</h2>
-    <p><button onclick="quiz('wrong')">Should provide a list that only new employees must follow</button></p>
-    <p><button onclick="quiz('wrong')">Should exempt upper management</button></p>
-    <p><button onclick="quiz('wrong')">Should change every week</button></p>
-    <p><button onclick="quiz('right')">Should provide a framework for professional responsibility.</button></p>
-</section>
-   
-<section id="q4">
-    <img src="./assets/image/copy_infrigement.jpg" alt="copyright">
-    <h2>Copyright Infringement:</h2>
-    <p><button onclick="quiz('wrong')">Includes writing poetry</button></p>
-    <p><button onclick="quiz('wrong')">Includes selling pencils</button></p>
-    <p><button onclick="quiz('right')">Includes distributing and selling unauthorized copies of CDs and DVDs.</button></p>
-    <p><button onclick="quiz('wrong')">Includes distributing and selling computer paper</button></p>    
-</section>
-
-<div id = "submitAnswers">
-<p><button onclick="showResults();">Show me my score!</button></p>
-</div>
     
-<div id="results">
-</div>
+    <div class="quiz_box custom_box hide">
+        <div id="alert1" style="color: darkgreen"></div>
+        
+	 	<div class="question_number">
 
-</main>
+	 	</div>
+	 	<div class="question_text">
+
+	 	</div>
+	 	<div class="option_container">
+
+	 	</div>
+	 	<div class="next_question_btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+		<!--	<button type="button" class="btn" onclick="previous()"></button>-->
+	 	</div>
+	 	
+        <div class="answer_indicator">
+
+	 	</div>
+ </div>
+ <div class="register_box custom_box hide">
+ 	<form name="form" class="form" id="form">
+ 		<div id="alert2" style="color: deeppink"></div> 
+        <br>
+        <h1>Optional form: Feel free to contact us </h1>
+    
+ 
+<!-- Section: User Name -->           
+        <div class="form_group" id="group2_user">  
+        <label for="uname" class="form_label">Name <br></label>
+ 		<div class="form_group-input">
+        <input type="text"  class="form_input" placeholder="Name" required name="uname" id="uname" /> <!-- class= w3-input w3-border w3-round-large -->
+            
+        <i class="form_validation-status fas fa-times-circle"></i>
+        <p class="form_input-error">Name must contain only letters, numbers</p>
+        </div>
+        </div>
+        <br>
+<!-- Section: User Email -->       
+        <div class="form_group" id="group_email">  <!-- class="form1_group-ok or form1_group-nok" -->
+        <label for="email" class="form_label">Email <br></label>
+        <div class="form_group-input">
+        <input type="email"  class="form_input" placeholder="email" required name="email" id="email" /> 
+        <i class="form_validation-status fas fa-times-circle"></i>
+        <p class="form_input-error">Email must contain only letters, numbers, dots, or the underscore character</p>
+        </div>
+        <br>
+        </div>
+<!-- Section: Mobile phone -->       
+        <div class="form_group" id="group_phone">  <!-- class="form1_group-ok or form1_group-nok" -->
+        <label for="phone" class="form_label">Mobile number [optional]<br></label>
+        <div class="form_group-input">
+        <input type="number"  class="form_input" placeholder="Mobile number" required  name="phone" id="phone" /> 
+        <i class="form_validation-status fas fa-times-circle"></i>
+        <p class="form_input-error">Mobile number must contain only numbers</p>
+        </div>
+        <br>
+        </div>
+<!-- Section: Error message -->       
+        <div class="form_mens" id="form_mens">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Please, review the form again. </p>
+        </div>        
+        <br>
+			
+        <div class="form_group form_group-btn-send">
+       <button type="button" value="submit" onclick="register()" class="btn">Submit </button>
+        <p class="form_mens-ok" id="form_mens-ok">Info sent successfully!</p>
+        </div>
+    </form>
+ </div>
+
+ <div class="result_box custom_box hide">
+     <div id="alert3" style="color: green"></div>
+     <h1>See the True in Colour below</h1>
+     
+ 		<table>
+ 			<tr>
+ 				<td>Total # Questions</td>
+ 				<td><span class="total_question"></span></td>
+ 			</tr>
+            <tr>
+ 				<td>Final Score</td>
+ 				<td><span class="total_score"></span></td>
+ 			</tr>
+            <tr>
+ 				<td>Correct Answers Performance</td>
+ 				<td><span class="persentage"></span></td>
+ 			</tr>
+            <tr>
+ 				<td>Ethical Quiz Performance</td>
+ 				<td><span class="EthicP"></span></td>
+ 			</tr>
+             <tr>
+ 				<td>Time Elapsed - seconds</td>
+ 			    <td><span class="remarks"></span></td> 
+ 			</tr>			     
+            <tr>
+ 				<td>correct</td>
+ 				<td><span class="total_correct"></span></td>
+ 			</tr>
+ 			<tr>
+ 				<td>wrong</td>
+ 				<td><span class="total_wrong"></span></td>
+ 			</tr>
+ 			<tr>
+ 				<td>Attempt</td>
+ 				<td><span class="total_attempt"></span></td>
+ 			</tr>
+ 		</table>
+ <!-- 		<button type="button" class="btn" onclick="tryAgainQuiz()">A Second Chance</button> -->
+ 		<button type="button" class="btn" onclick="goToHome();clearResult();">Home</button>
+ 
+    </div>
+
+<script type="text/javascript" src="./assets/JS/app.js"></script>
+<script type="text/javascript" src="./assets/JS/enterusername.js"></script>   
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     
 </body>
 </html>
