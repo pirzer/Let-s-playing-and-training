@@ -225,7 +225,7 @@ function setAvailableQuestions(){
 
 
 
-// form section new - use - new - displaying user nickname
+// form section new - use - new - displaying user nickname - adding line 239 return true
 
 function WelcomeNickName() {
   var variable = document.getElementById('input_user').value;
@@ -235,7 +235,9 @@ function WelcomeNickName() {
   document.getElementById('alert3').innerHTML = 'Mr/Mrs: ' + variable;
  if(variable == '') {
         alert("You must enter a username")
-    } 
+    } else {
+        return true;
+    }
     
 }
 
@@ -388,8 +390,8 @@ function next(){
      else {
        questionCounter--;
      }
-}*/
-//
+}
+//  */
 function quizOver(){
 	//when the quiz is over, the  timer stops
 // window.clearInterval(update);
@@ -441,11 +443,7 @@ function end() {
 // reset option
 
 
-// comments to Users
 
-
-
-// end of comments
 
 
 
@@ -465,15 +463,9 @@ function quizResult(){
 	const persentage = (correctAnswers/quiz.length)*100;
 	resultBox.querySelector(".persentage").innerHTML = persentage.toFixed(0) + "%";
 	resultBox.querySelector(".total_score").innerHTML = correctAnswers + " / " + quiz.length;
- //*   resultBox.querySelector(".remarks").innerHTML = seconds;
-//*	resultBox.querySelector(".EthicP").innerHTML = commentoUsers;
 
- //*    const percennEthic = (((correctAnswers))/(attempt))*100;
- //*    resultBox.querySelector(".EthicP").innerHTML = percennEthic.toFixed(0) + "%";
 
-    
-//*    const percenUnethic = (((attempt - correctAnswers))/(attempt))*100;
-//*    resultBox.querySelector(".UnEthicP").innerHTML = percenUnethic.toFixed(0) + "%";
+
  
 }
 
