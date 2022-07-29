@@ -386,7 +386,7 @@ position: relative;
 
 .quiz_box .answer_indicator div.correct{
 	background-color: green;
-	background-image: url("../image/correct1.gif"); /* new */
+	background-image: url("/assets/image/correct1.gif"); /* new */
 	background-size: 45px 45px;                          /* new 50% */
 	background-repeat: no-repeat;                  /* new */
 	background-position: center;                   /* new */
@@ -394,7 +394,7 @@ position: relative;
 
 .quiz_box .answer_indicator div.wrong{
 	background-color: red;                         /* new */
-	background-image: url("../image/wrong1.gif");         /* new */
+	background-image: url("/assets/image/wrong1.gif");         /* new */
 	background-size: 45px 45px;                  /* new 50% */
 	background-repeat: no-repeat;              /* new */
 	background-position: center;               /* new */
