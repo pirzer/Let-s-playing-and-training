@@ -411,7 +411,7 @@ function register(){
 	quizResult();
 }
 
-////// Elapsed time - Users
+////// Elapsed time - Users  ----------
 
 var startTime, endTime;
 
@@ -430,7 +430,7 @@ function end() {
   console.log(seconds + " seconds");
 }
 
-// end of elapsed time
+// end of elapsed time ---------
 
 
 // reset option
@@ -442,6 +442,26 @@ function end() {
 // reset option
 
 
+// comments to Users
+
+function commentoUsers() {
+	let stamp = null;
+	let stampColor = null;
+  
+	// feedback for player remarked in green or red color
+	if (correctAnswers <= 3) {
+	  stamp = "Bad Grades, Keep Practicing.";
+	  stampColor = "red";
+	} else if (correctAnswers > 3 && correctAnswers < 5) {
+	  stamp = "Average Grades, You can do better.";
+	  stampColor = "orange";
+	} else if (playerScore >= 6) {
+	  stamp = "Excellent, Keep the good work going.";
+	  stampColor = "green";
+	}
+	  else
+		  return false;
+  }
 
 
 
@@ -464,7 +484,7 @@ function quizResult(){
 	resultBox.querySelector(".persentage").innerHTML = persentage.toFixed(0) + "%";
 	resultBox.querySelector(".total_score").innerHTML = correctAnswers + " / " + quiz.length;
     resultBox.querySelector(".remarks").innerHTML = seconds;
- 
+	resultBox.querySelector(".EthicP").innerHTML = commentoUsers;
 
  //*    const percennEthic = (((correctAnswers))/(attempt))*100;
  //*    resultBox.querySelector(".EthicP").innerHTML = percennEthic.toFixed(0) + "%";
