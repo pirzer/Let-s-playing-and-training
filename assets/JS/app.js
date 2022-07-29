@@ -500,7 +500,7 @@ function goToHome(){
 
 	resetQuiz();
 }
-//###STARTING POINT###
+//###Kick-Off Quiz###
 
 function startQuiz() {
 	//start timer
