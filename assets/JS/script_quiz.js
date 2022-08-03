@@ -244,7 +244,7 @@ const addScore = () => {
   // If score percentage is less than 70
   if(scorePercent < 80 || myScore.textContent == 0) {
     // Display text 'Better luck next time!'
-    scoreText.innerText = 'It does not look promesing, please get in touch with us soon! - Performance below 80%!!'
+    scoreText.innerText = 'It does not look promesing, please get in touch with us soon! - Performance below 80%!!'}
 // testing
       if(scorePercent <= 40 || myScore.textContent == 0) {
     // Display text the following message, if the Percentage below 40%
@@ -253,7 +253,7 @@ const addScore = () => {
       
       
 // If score percentage is more than or equal to 80%, then show text below
-  } else {
+   else {
     scoreText.innerText = "Fantastic, Keep your ethic values up! Performance above 80%!!"
   }
 };
@@ -264,7 +264,7 @@ const nextQuestion = () => {
   // Remove the 'Times Up!' text
   timeUp.textContent = "";
   // Reset time left to 15
-  timer.innerText = 5; //15 second to 10 seconds
+  timer.innerText = 8; //15 second to 10, or 8 seconds
   // hide the next question button and display check answer button
   nextButton.style.display = "none";
   checkButton.style.display = "inline";
@@ -288,7 +288,7 @@ const restartQuiz = () => {
   // Reset score and current question to 0, time left to 15
   myScore.innerText = 0;
   currentQuestion.innerText = 0;
-  timer.innerText = 5; //15 second to 5 seconds
+  timer.innerText = 8; //15 second to 10, or 8 seconds
   // Enable each option button, and remove backgound color
   optionButtons.forEach(eachButton => {
     enableButton(eachButton)
@@ -334,7 +334,7 @@ finishButton.addEventListener("click", () => {
   clearInterval(timerInterval);
  })
 
-// When restart button is clicked, ;execute this:
+// When restart button is clicked, execute this:
 restartButton.addEventListener("click", restartQuiz);
 
 // Loop over quit quiz buttons (There are 2)
