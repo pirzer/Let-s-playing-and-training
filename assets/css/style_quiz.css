@@ -10,7 +10,7 @@
 }
 
 :root {
-    --background-image: url('/assets/image/bluebackground3.jpg');
+    --background-image: url('assets/image/bluebackground3.jpg');
     --instructions: rgb(72 15 176 / 70%); 
     --line-color: rgb(167 12 251 / 72%); 
     --text-color: rgb(255, 255, 0); 
