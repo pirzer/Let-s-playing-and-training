@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="assets/css/styles2.css"> 
+</head>
+<body>
+
+      <div class="container">
+        <form id="signup" class="form">
+            <h1>Feel free to fill the form below. This is optional</h1>
+            <h1> - GDPR company's policy -</h1>
+            <div class="form-field">
+                <label for="username">Name:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <small></small>
+            </div>
+
+
+            <div class="form-field">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <small></small>
+            </div>
+            </form>
+        </div>  
+<!------------ Input NickName             <h1>Please, Enter your Nickname below before to start the test</h1> 
+ -->
+            
+    <br>
+    <br>
+     
+     <div class="container1">
+        <form class="form" name="form" onsubmit="submitForm(event);">
+           <label>Please, enter your Nickname below before to start the test.</label> 
+            <label>This is mandatory</label>
+            <div class="Name"></div><input type="text" name="nickname" required>
+            <small></small><br>   
+            <button type="submit" class="sendnickname">Play Quiz</button>
+        </form>
+            </div>
+    <!------------ End of NickName  -->
+
+   
+    <script src="assets/JS/script_quiz.js"></script>
+    <script src="assets/JS/js_nickname2.js"></script>
+
+</body>
+</html>

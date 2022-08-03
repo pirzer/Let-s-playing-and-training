@@ -1,0 +1,228 @@
+/* Google font API */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-image: url('/assets/image/bluebackground3.jpg');
+    --instructions: rgb(72 15 176 / 70%); 
+    --line-color: rgb(167 12 251 / 72%); 
+    --text-color: rgb(255, 255, 0); 
+    --progress-bar: rgb(255, 255, 0, 0.5);  
+    --box-shadow: rgb(10 25 177) 0px 4px 16px, rgb(210 255 0 / 85%) 0px 8px 32px; /* rgb(10 25 177) 0px 4px 16px, rgb(17 17 26) 0px 8px 32px;  */
+    /* Check Button */
+    --check-button: linear-gradient(90deg, rgb(255 255 0) 0%, rgb(255 255 0) 52%, rgb(255 255 0) 100%); 
+    --check-button-hover: linear-gradient(270deg, rgb(255 255 0 / 50%) 0%, rgb(255 255 0 / 50%) 52%, rgb(255 255 0 / 50%) 100%); /* 
+    /* Next Button */
+    --next-button: linear-gradient(90deg, rgb(225 155 31) 0%, rgb(232 147 30) 59%, rgb(239 140 2) 100%); 
+    --next-button-hover: linear-gradient(270deg, rgb(255 255 0 / 50%) 0%, rgb(255 255 0 / 50%) 59%, rgb(255 255 0 / 50%) 100%) 
+
+    /* Quit button */
+    --quit-button: blue;
+}
+
+
+body {
+    /* background-color: #0f309f; */
+    background-image: url('/assets/image/bluebackground3.jpg');
+    
+    
+}
+
+
+/* nick name  */ 
+.user {
+    display: flex;
+    padding-left: 43%; 
+    padding-bottom: 3%;
+    align-items: center;
+    font-size: 16px;
+    background-color: rgb(72 15 176 / 70%); /* #2c5483;  */
+}
+/* end of nick name  */ 
+
+
+/* Common padding */
+.p2 {
+    padding: 2%;
+    padding-bottom: 3%;
+}
+
+/* Common margin */
+.m2 {
+    margin: 2%;
+}
+
+/* Common border radius */
+.hr1half {
+    border-radius: 1.5rem;
+}
+
+/* Do not display timer initially */
+.timer {
+    display: none;
+}
+
+/* All text color */
+h1, h2,h3, h4, p, span {
+    color: var(--text-color);
+}
+
+/* Main app */
+main {
+    margin: 0 auto;
+    width: 85%;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: var(--box-shadow);
+}
+
+.main-quiz {
+    display: none;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line-color);
+    align-items: center;
+}
+
+/* Get started section & Final score */
+.get-started, .final-score {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* center; */ 
+    align-items: center;
+}
+
+.get-started > *, .final-score > * {
+    text-align: center;
+    margin: 0 10%;
+}
+
+.instructions, .display-score {
+    background: var(--instructions);
+    margin-bottom: 3%;
+    padding: 1%;
+ /*   backdrop-filter: blur(2px); */
+    font-size: 16px;
+}
+
+.start-button {
+    background: var(--check-button);
+    box-shadow: var(--box-shadow);
+    cursor:pointer;
+    border-style: none;
+    width: 30%;   /* Restart Quiz button -> 60% to 20% */
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+.start-button:hover {
+    background: var(--check-button-hover);
+}
+
+/* Other Final score style */
+.final-score {
+    display: none;
+    height: 80vh;
+}
+
+.score-quit {
+    width: 30%;  /* score quit button 60% to 30% */
+    margin: 0 auto;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+/* Progress section */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    box-shadow: var(--box-shadow);
+    border-style: none;
+}
+
+.progress-bar {
+    width: 80%;
+    accent-color: var(--progress-bar);
+}
+
+/* Questions */
+#option-1, #option-2, #option-3, #option-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3% 0;
+    border-style: none;
+    cursor: pointer;
+    background: var(--line-color);
+    box-shadow: var(--box-shadow);
+  /*  backdrop-filter:blur(2px);  */
+    text-align: left;
+    color: yellow;
+    font-size: 26px;
+    align-items: center;
+}
+
+/* Footer Buttons */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > button {
+    width: 30%;  /* 30% to 20% */
+    margin: 2% auto;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.check-answer {
+    background: var(--check-button);
+    font-size: 16px;
+    color: black;
+}
+
+.check-answer:hover {
+    background: var(--check-button-hover);
+}
+
+.next-question, .finish-quiz {
+    background: var(--next-button);
+    display: none;
+    font-size: 16px; /* effec making bigger */
+}
+
+.next-question:hover, .finish-quiz:hover {
+    background: var(--next-button-hover);
+}
+
+.quit-quiz {
+    background: var(--quit-button);
+    font-size: 16px;
+    background-color: rgba(229, 22, 22, 0.72); /*red  */
+}
+
+.quit-quiz:hover {
+    background: var(--quit-button-hover);
+}
+
+.my-score, .total-score {
+    color: rgb(235, 255, 0);
+    font-size: 20px;
+}
