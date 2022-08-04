@@ -196,7 +196,7 @@ const startQuiz = () => {
 
 const checkAnswer = () => {
   // If current question is the last question, execute this:
-  if(currentQuestion.textContent <= quizes.length) {
+  if(currentQuestion.textContent >= quizes.length) {
     // Hide next question and check answer button, and display finish quiz button
     nextButton.style.display="none"
     checkButton.style.display="none"
