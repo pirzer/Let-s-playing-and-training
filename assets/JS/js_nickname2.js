@@ -118,9 +118,10 @@ const showSuccess = (input) => {
 
 
 form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
+    // prevent the form from submitting     
     e.preventDefault();
 
+  
     // validate fields
     let isUsernameValid = checkUsername(),
         isEmailValid = checkEmail(),

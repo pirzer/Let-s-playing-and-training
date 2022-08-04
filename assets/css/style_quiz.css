@@ -10,7 +10,8 @@
 }
 
 :root {
-    --background-image: url('assets/image/bluebackground3.jpg');
+  /*  --background-image: url('assets/image/bluebackground3.jpg');   */
+    --background-color: #0f309f;
     --instructions: rgb(72 15 176 / 70%); 
     --line-color: rgb(167 12 251 / 72%); 
     --text-color: rgb(255, 255, 0); 
@@ -29,8 +30,8 @@
 
 
 body {
-    /* background-color: #0f309f; */
-    background-image: url(../image/bluebackground3.jpg);
+    background-color: #0f309f;
+   /*  background-image: url(../image/bluebackground3.jpg); */
     
     
 }
@@ -78,7 +79,9 @@ h1, h2,h3, h4, p, span {
 main {
     margin: 0 auto;
     width: 85%;
-    background-image: var(--background-image);
+/*    background-image: var(--background-image); */
+        background-color: #0f309f;
+
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: var(--box-shadow);

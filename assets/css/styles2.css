@@ -9,13 +9,15 @@
     box-sizing: border-box;  
     font-family: 'Roboto', sans-serif;
     color: black; /* black */
-    background-color: rgb(240, 198, 131);
+    background-color: rgb(27, 11, 196);
 }
 :root {
     --error-color: #dc3545;
     --success-color: #28a745;
     --warning-color: #ffc107;  /* ffc107 */
-    --background-image: url('assets/image/bluebackground3.jpg');  
+  /*  --background-image: url('assets/image/bluebackground3.jpg');   */
+  background-color: #0f309f;
+
     --box-shadow: rgb(255, 255, 0) 0px 4px 16px, rgb(17 17 26) 0px 8px 32px; 
 
 
@@ -25,8 +27,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    /* background-color: #0f309f; */
-    background-image: url(../image/bluebackground3.jpg); 
+    background-color: #0f309f;
+  /*  background-image: url(../image/bluebackground3.jpg);  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +151,9 @@ input {
 .container, .container1 {
     margin: 0 auto;
     width: 65%;
-    background-image: var(--background-image);
+ /*   background-image: var(--background-image); */
+ background-color: #0f309f;
+
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: var(--box-shadow);
