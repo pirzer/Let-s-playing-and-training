@@ -192,11 +192,12 @@ const startQuiz = () => {
   currentQuestion.innerText++;
 }
 
-//   if(currentQuestion.textContent >= quizes.length) {
+//   if(currentQuestion.textContent >= quizes.length) { - it was added     finishButton.style.display = "inline" to line209
+
 
 const checkAnswer = () => {
   // If current question is the last question, execute this:
-  if(currentQuestion.textContent > quizes.length) {
+  if(currentQuestion.textContent >= quizes.length) {
     // Hide next question and check answer button, and display finish quiz button
     nextButton.style.display="none"
     checkButton.style.display="none"
@@ -205,6 +206,8 @@ const checkAnswer = () => {
     // If not the last question, hide check answer button and display next button
     checkButton.style.display = "none";
     nextButton.style.display="inline";
+    finishButton.style.display = "inline"
+
   };
   selectedButton.style.backgroundColor = "rgba(255, 0, 78, 0.99)"   /* Wrong answer */
   // Display answer
