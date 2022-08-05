@@ -116,11 +116,7 @@ const showSuccess = (input) => {
     error.textContent = '';
 }
 
-/*
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting     
-    e.preventDefault();
-*/
+
  
 /* const form = document.querySelector("#signup"); */
 /*
@@ -128,7 +124,11 @@ form.addEventListener("submit", function (event) {
     event.preventDefault(); // prevent default browser SUBMIT action
     console.log("Form not submitted yet. Do your JS magic here!");
 
-});
+}); 
+*/
+    form.addEventListener('submit', function (e) {
+    // prevent the form from submitting     
+    e.preventDefault();
 
     // validate fields
     let isUsernameValid = checkUsername(),
@@ -147,7 +147,7 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-*/
+
 const debounce = (fn, delay = 500) => {
     let timeoutId;
     return (...args) => {
@@ -162,13 +162,7 @@ const debounce = (fn, delay = 500) => {
     };
 };
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault(); // prevent default browser SUBMIT action
-    console.log("Form not submitted yet. Do your JS magic here!");
-
-});
-
-form.addEventListener('input', debounce(function (event) {
+form.addEventListener('input', debounce(function (e) {
     switch (e.target.id) {
         case 'username':
             checkUsername();
