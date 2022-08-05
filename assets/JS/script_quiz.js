@@ -145,12 +145,12 @@ const timerCountdown = () => {
       // If nothing is selected after time is up execute this:
       if(selectedButton == undefined) {
         // If it is the last question, execute this:
-        if(currentQuestion.textContent === totalQuestions.textContent) {
+        if(currentQuestion.textContent = totalQuestions.textContent) {
           // Hide next question button and display finish quiz button
           nextButton.style.display ="none";
           finishButton.style.display="inline";
         } else {
-          // otherwise, if it's not the last question, display next quesiton button - typo:"inline"
+          // otherwise, if it's not the last question, display next question button - error of typing fixed
           nextButton.style.display = 'inline';
         }
       }
@@ -280,8 +280,10 @@ const nextQuestion = () => {
   updateProgressBar();
   // Start timer countdown
   timerCountdown();
-  // Set question to be the correct question form the quizes array
+  // Set question to be the correct question form the quizes array - It was added if (question) {} on line 284 to 286 
+  if (question) {
   question.innerText = quizes[currentQuestion.textContent - 1].question;
+  }
   // Change all option buttons to the appropriate text
   for(i = 0; i < optionButtons.length; i++) {
     optionButtons.item(i).innerText = quizes[currentQuestion.textContent - 1].options[i]
