@@ -204,7 +204,7 @@ const checkAnswer = () => {
     checkButton.style.display="none"
     finishButton.style.display = "inline"
   } else {
-    // If not the last question, hide check answer button and display next button
+    // If not the last question, hide check answer button, and display next button & finish button
     checkButton.style.display = "none";
     nextButton.style.display="inline";
     finishButton.style.display = "inline"
