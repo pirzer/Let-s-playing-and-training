@@ -224,7 +224,7 @@ footer > button {
 
 .quit-quiz {
     background: var(--quit-button);
-    font-size: 16px;
+    font-size: 25px;
     background-color: rgba(229, 22, 22, 0.72); /*red  */
 }
 
