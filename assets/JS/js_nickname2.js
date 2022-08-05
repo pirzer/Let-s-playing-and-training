@@ -123,6 +123,7 @@ form.addEventListener('submit', function (e) {
 */
  
 /* const form = document.querySelector("#signup"); */
+/*
 form.addEventListener("submit", function (event) {
     event.preventDefault(); // prevent default browser SUBMIT action
     console.log("Form not submitted yet. Do your JS magic here!");
@@ -146,7 +147,7 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-
+*/
 const debounce = (fn, delay = 500) => {
     let timeoutId;
     return (...args) => {
