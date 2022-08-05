@@ -126,7 +126,7 @@ form.addEventListener('submit', function (e) {
 form.addEventListener("submit", function (event) {
     event.preventDefault(); // prevent default browser SUBMIT action
     console.log("Form not submitted yet. Do your JS magic here!");
-});
+
 
 
     // validate fields
