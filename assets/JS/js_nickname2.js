@@ -128,7 +128,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault(); // prevent default browser SUBMIT action
     console.log("Form not submitted yet. Do your JS magic here!");
 
-
+});
 
     // validate fields
     let isUsernameValid = checkUsername(),
@@ -162,7 +162,13 @@ const debounce = (fn, delay = 500) => {
     };
 };
 
-form.addEventListener('input', debounce(function (e) {
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // prevent default browser SUBMIT action
+    console.log("Form not submitted yet. Do your JS magic here!");
+
+});
+
+form.addEventListener('input', debounce(function (event) {
     switch (e.target.id) {
         case 'username':
             checkUsername();
