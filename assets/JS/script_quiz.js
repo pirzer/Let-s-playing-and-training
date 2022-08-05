@@ -310,12 +310,17 @@ const restartQuiz = () => {
 
 /* ----- Buttons event listeners -----*/
 // When get started button is clicked, execute this:
+if (startButton) {
 startButton.addEventListener("click", startQuiz);
+}
 
 // When check answer button is clicked, execute this:
+if (checkButton) {
 checkButton.addEventListener("click", checkAnswer);
+}
 
 // When next question button is clicked, execute this:
+if (nextButton) {
 nextButton.addEventListener("click", () => {
   // Go to the next question, remove background color, and enable all options button
   nextQuestion();
@@ -323,9 +328,11 @@ nextButton.addEventListener("click", () => {
   optionButtons.forEach(eachButton => {
     enableButton(eachButton)
   })
-});
+})
+};
 
 // When finish quiz button is clicked
+if (finishButton) {
 finishButton.addEventListener("click", () => {
   // Remove 'Time up!' text
   timeUp.textContent = '';
@@ -337,8 +344,9 @@ finishButton.addEventListener("click", () => {
   // Stop timer
   clearInterval(timerInterval);
  })
-
+};
 // When restart button is clicked, execute this:
+if (restartButton) {
 restartButton.addEventListener("click", restartQuiz);
 
 // Loop over quit quiz buttons (There are 2)
@@ -352,5 +360,6 @@ quitButton.forEach(button => {
     // Refresh page and go to main website
     location.href = "index_nickname2.html";
 })
-});
+})
+};
 
