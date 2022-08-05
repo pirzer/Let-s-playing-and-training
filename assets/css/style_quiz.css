@@ -75,12 +75,12 @@ h1, h2,h3, h4, p, span {
     color: var(--text-color);
 }
 
-/* Main app */
+/* Main background */
 main {
     margin: 0 auto;
     width: 85%;
 /*    background-image: var(--background-image); */
-        background-color: #0f309f;
+        background-color: rgb(40, 165, 232); /* #0f309f; */
 
     background-size: cover;
     background-repeat: no-repeat;

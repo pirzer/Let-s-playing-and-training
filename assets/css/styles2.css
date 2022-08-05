@@ -150,7 +150,7 @@ input {
     margin: 0 auto;
     width: 65%;
  /*   background-image: var(--background-image); */
- background-color: #0f309f;
+ background-color: #ccd9ca; /*  #0f309f;  */
 
     background-size: cover;
     background-repeat: no-repeat;
