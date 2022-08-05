@@ -80,11 +80,10 @@ main {
     margin: 0 auto;
     width: 85%;
 /*    background-image: var(--background-image); */
-        background-color: rgb(40, 165, 232); /* #0f309f; */
+        background-color: rgb(46, 107, 139); /* #0f309f; */
 
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: var(--box-shadow);
 }
 
 .main-quiz {
