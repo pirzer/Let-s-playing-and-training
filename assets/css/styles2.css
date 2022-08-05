@@ -9,25 +9,23 @@
     box-sizing: border-box;  
     font-family: 'Roboto', sans-serif;
     color: black; /* black */
-    background-color: rgb(86, 212, 23);
+    background-color: rgb(153 206 235); /* rgb(86, 212, 23);  */
 }
 :root {
     --error-color: #dc3545;
     --success-color: #28a745;
     --warning-color: #ffc107;  /* ffc107 */
   /*  --background-image: url('assets/image/bluebackground3.jpg');   */
-  background-color: #df802d;
+    --background-color: #da41df;
 
     --box-shadow: rgb(255, 255, 0) 0px 4px 16px, rgb(17 17 26) 0px 8px 32px; 
-
-
 }
 
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #0f309f;
+    background-color: #4670fc; /* #0f309f;  */
   /*  background-image: url(../image/bluebackground3.jpg);  */
     display: flex;
     flex-direction: column;
