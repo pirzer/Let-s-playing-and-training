@@ -116,12 +116,19 @@ const showSuccess = (input) => {
     error.textContent = '';
 }
 
-
+/*
 form.addEventListener('submit', function (e) {
     // prevent the form from submitting     
     e.preventDefault();
+*/
+ 
+/* const form = document.querySelector("#signup"); */
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // prevent default browser SUBMIT action
+    console.log("Form not submitted yet. Do your JS magic here!");
+});
 
-  
+
     // validate fields
     let isUsernameValid = checkUsername(),
         isEmailValid = checkEmail(),
