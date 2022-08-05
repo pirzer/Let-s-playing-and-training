@@ -23,7 +23,6 @@
     /* Next Button */
     --next-button: linear-gradient(90deg, rgb(225 155 31) 0%, rgb(232 147 30) 59%, rgb(239 140 2) 100%); 
     --next-button-hover: linear-gradient(270deg, rgb(255 255 0 / 50%) 0%, rgb(255 255 0 / 50%) 59%, rgb(255 255 0 / 50%) 100%) 
-
     /* Quit button */
     --quit-button: blue;
 }
@@ -204,10 +203,19 @@ footer > button {
     background: var(--check-button-hover);
 }
 
-.next-question, .finish-quiz {
+.next-question {
     background: var(--next-button);
     display: none;
     font-size: 16px; /* effec making bigger */
+}
+
+.finish-quiz {
+    background: var(--finish-button);
+    display: none;
+    font-size: 16px; /* effec making bigger */
+
+   /* Finish Button */
+   --finish-button: linear-gradient(90deg, rgb(255 255 0) 0%, rgb(219 158 233) 59%, rgb(110 31 225) 100%);  
 }
 
 .next-question:hover, .finish-quiz:hover {
