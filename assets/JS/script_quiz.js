@@ -150,8 +150,8 @@ const timerCountdown = () => {
           nextButton.style.display ="none";
           finishButton.style.display="inline";
         } else {
-          // otherwise, if it's not the last question, display next quesiton button
-          nextButton.style.display = "inline";
+          // otherwise, if it's not the last question, display next quesiton button - typo:"inline"
+          nextButton.style.display = 'inline';
         }
       }
       insertTimerText();

@@ -3,7 +3,7 @@ const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
 const confirmPasswordEl = document.querySelector('#confirm-password');
 
-const form = document.querySelector('#signup');
+const fOrm = document.querySelector('#signup');
 
 
 const checkUsername = () => {
@@ -116,19 +116,12 @@ const showSuccess = (input) => {
     error.textContent = '';
 }
 
-
- 
-/* const form = document.querySelector("#signup"); */
-/*
-form.addEventListener("submit", function (event) {
-    event.preventDefault(); // prevent default browser SUBMIT action
-    console.log("Form not submitted yet. Do your JS magic here!");
-
-}); 
-*/
-    form.addEventListener('submit', function (e) {
+if (fOrm) {
+     fOrm.addEventListener('submit', function (e) {
     // prevent the form from submitting     
     e.preventDefault();
+     
+
 
     // validate fields
     let isUsernameValid = checkUsername(),
@@ -143,9 +136,10 @@ form.addEventListener("submit", function (event) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-
+     
     }
-});
+})
+};
 
 
 const debounce = (fn, delay = 500) => {
@@ -162,7 +156,8 @@ const debounce = (fn, delay = 500) => {
     };
 };
 
-form.addEventListener('input', debounce(function (e) {
+if (fOrm) {
+fOrm.addEventListener('input', debounce(function (e) {
     switch (e.target.id) {
         case 'username':
             checkUsername();
@@ -178,3 +173,4 @@ form.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
+};
