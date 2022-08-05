@@ -11,7 +11,7 @@
 
 :root {
   /*  --background-image: url('assets/image/bluebackground3.jpg');   */
-    --background-color: rgb(153 206 235); /* #0f309f;*/
+    --background-color: rgb(153 206 235); /* rgb(153 206 235);          #0f309f;*/
     --instructions: rgb(72 15 176 / 70%); 
     --line-color: rgb(167 12 251 / 72%); 
     --text-color: rgb(255, 255, 0); 
@@ -30,7 +30,7 @@
 
 
 body {
-    background-color: #4670fc; /* #0f309f;*
+    background-color: #4670fc; /* #4670fc;      #0f309f;*
    /*  background-image: url(../image/bluebackground3.jpg); */
     
     

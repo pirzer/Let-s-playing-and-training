@@ -140,13 +140,14 @@ const timerCountdown = () => {
         displayAnswer();
         // Hide the check answer button and display next question button
         checkButton.style.display ="none";
-        nextButton.style.display ="inline";
+        nextButton.style.display ="none";
+        finishButton.style.display="inline";
       })
       // If nothing is selected after time is up execute this:
       if(selectedButton == undefined) {
         // If it is the last question, execute this:
-        if(currentQuestion.textContent = totalQuestions.textContent) {
-          // Hide next question button and display finish quiz button
+        if(currentQuestion.textContent === totalQuestions.textContent) {
+          // Hide next question button and display finish quiz button  -  'inline'
           nextButton.style.display ="none";
           finishButton.style.display="inline";
         } else {
