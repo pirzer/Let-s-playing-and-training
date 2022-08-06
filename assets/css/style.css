@@ -245,7 +245,7 @@ section:nth-child(even){
 
 
 .about .row .content{
-    flex:1 1 `20rem; /* changed 45rem to 20rem */
+    flex:1 1 20rem; /* changed 45rem to 20rem */
 }
 
 .about .row .content h3{
