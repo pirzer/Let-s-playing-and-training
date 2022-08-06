@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;  
     color: blue;
+    font-size: 18px;
 }
 :root {
     --error-color: #dc3545;
@@ -70,6 +71,8 @@ body {
     display: block;
     color: #000000;  
     margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
     }
 
 .form-field input {
