@@ -123,9 +123,8 @@ header {
     box-shadow: var(--box-shadow);
     cursor:pointer;
     border-style: none;
-    width: 30%;   /* Restart Quiz button -> 60% to 20% */
-    margin-bottom: 3%;
-    font-size: 20px;
+    margin-bottom:3%;
+    font-size: 25px;
 }
 
 .start-button:hover {
@@ -194,7 +193,7 @@ footer > button {
 
 .check-answer {
     background: var(--check-button);
-    font-size: 16px;
+    font-size: 25px;  /* font-size of check answer button */
     color: black;
 }
 
@@ -205,13 +204,13 @@ footer > button {
 .next-question {
     background: var(--next-button);
     display: none;
-    font-size: 16px; /* effec making bigger */
+    font-size: 25px; /* font-size of next questions */
 }
 
 .finish-quiz {
     background: var(--finish-button);
     display: none;
-    font-size: 16px; /* effec making bigger */
+    font-size: 25px; /* font-size of finish quiz */
 
    /* Finish Button */
    --finish-button: linear-gradient(90deg, rgb(255 255 0) 0%, rgb(219 158 233) 59%, rgb(110 31 225) 100%);  
