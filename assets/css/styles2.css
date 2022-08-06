@@ -8,16 +8,12 @@
     padding: 0;
     box-sizing: border-box;  
     color: blue;
-    /* black */
-   /*  background-color: rgb(153 206 235);  */
 }
 :root {
     --error-color: #dc3545;
     --success-color: #28a745;
-    --warning-color: #ffc107;  /* ffc107 */
-  /*  --background-image: url('assets/image/bluebackground3.jpg');   */
+    --warning-color: #ffc107;  
     --background-color: #da41df;
-
     --box-shadow: rgb(255, 255, 0) 0px 4px 16px, rgb(17 17 26) 0px 8px 32px; 
 }
 
@@ -25,8 +21,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #4670fc; /* #0f309f;  */
-  /*  background-image: url(../image/bluebackground3.jpg);  */
+    background-color: #4670fc; 
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,22 +33,23 @@ body {
 
 
 .container1 {
+    
     background-color: yellow;
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 16px 15px 15px 1px rgb(126 91 146); /* 0 2px 5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 16px 15px 15px 1px rgb(126 91 146); 
     width: 400px;
-    
-}
+    }
 
 .container {
-    background-color: yellow; /* fff to yellow */ 
+
+
+    background-color: yellow; 
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 16px 15px 15px 1px rgb(126 91 146);   /*    0 2px 5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 16px 15px 15px 1px rgb(126 91 146);  
     width: 400px;
 }
-
 .form {
     padding: 10px 20px;
 }
@@ -71,7 +68,7 @@ body {
     
 .form-field label {
     display: block;
-    color: #000000;  /* #000000 #777 */
+    color: #000000;  
     margin-bottom: 5px;
     }
 
@@ -90,18 +87,16 @@ body {
 }
 
 .form-field.error input {
-    border-color: var(--error-color); /* #dc3545 */
+    border-color: var(--error-color); 
 }
 
 .form-field.success input {
-    border-color: var(--success-color); /* #28a745; */
+    border-color: var(--success-color); 
 }
-
 
 .form-field small {
-    color: var(--error-color); /* #dc3545 */ 
+    color: var(--error-color); 
 }
-
 
 /* button */
 .btn {
@@ -149,11 +144,11 @@ input {
 .container, .container1 {
     margin: 0 auto;
     width: 65%;
-    background-color: #ccd9ca; /*  #0f309f;  */
+    background-color: #ccd9ca; 
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: var(--box-shadow);
-    background-color: #b8bbd7; /* fff to yellow */ 
+    background-color: #b8bbd7; 
     border-radius: 18px;
     margin-top: 2%;
 }
@@ -176,3 +171,13 @@ a:-webkit-any-link {
     margin-bottom: 15%;
     border-radius: 12px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .body {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+    .form {
+      width: 100%;
+    }
+  }
