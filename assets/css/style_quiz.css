@@ -39,7 +39,6 @@ body {
 /* nick name  */ 
 .user {
     display: flex;
-    padding-left: 43%; 
     padding-bottom: 1%;
     align-items: center;
     font-size: 16px;
