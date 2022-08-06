@@ -13,7 +13,7 @@
   /*  --background-image: url('assets/image/bluebackground3.jpg');   */
     --background-color: rgb(153 206 235); /* rgb(153 206 235);          #0f309f;*/
     --instructions: rgb(72 15 176 / 70%); 
-    --line-color: rgb(167 12 251 / 72%);
+    --line-color: rgb(110 31 225); 
     --text-color: rgba(255 255 0);
     --progress-bar: rgb(255, 255, 0, 0.5);  
     --box-shadow: rgb(10 25 177) 0px 4px 16px, rgb(210 255 0 / 85%) 0px 8px 32px; /* rgb(10 25 177) 0px 4px 16px, rgb(17 17 26) 0px 8px 32px;  */
@@ -43,7 +43,7 @@ body {
     padding-bottom: 1%;
     align-items: center;
     font-size: 16px;
-    background-color: rgb(72 15 176 / 70%); /* #2c5483;  */
+    background-color: rgb(71 10 159 / 70%); /* 71 10 159*/
 }
 /* end of nick name  */ 
 
@@ -93,7 +93,7 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 6px solid var(--line-color);
+    border-bottom: 6px solid rgb(216 225 31); /*6px solid var(--line-color);  */
     align-items: center;
 }
 
