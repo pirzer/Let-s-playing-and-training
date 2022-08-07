@@ -2,7 +2,7 @@
 
 :root{
     --green:#396de2; /* green #16a085 */
-    --black:#4f8ac6; /* #444 */
+    --blue:#4f8ac6; /* #444 */
     --light-color:#8897ba; /* #777 */
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
@@ -40,7 +40,7 @@ section:nth-child(even){
     padding-bottom: 2rem;
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
-    color:var(--black);
+    color:var(--blue);
     font-size: 5rem;
     letter-spacing: .4rem;
 }
@@ -97,7 +97,7 @@ section:nth-child(even){
 
 .header .logo{
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--blue);
 }
 
 .header .logo i{
@@ -147,7 +147,7 @@ section:nth-child(even){
 
 .home .content h3{
     font-size: 4.5rem;
-    color:var(--black);
+    color:var(--blue);
     line-height: 1.8;
     text-shadow: var(--text-shadow);
 }
@@ -183,7 +183,7 @@ section:nth-child(even){
 
 .icons-container .icons h3{
     font-size: 4.5rem;
-    color:var(--black);
+    color:var(--blue);
     padding: .5rem 0;
     text-shadow: var(--text-shadow);
 }
@@ -214,7 +214,7 @@ section:nth-child(even){
 }
 
 .services .box-container .box h3{
-    color: var(--black);
+    color: var(--blue);
     font-size: 2.5rem;
     padding:1rem 0;
 }
@@ -249,7 +249,7 @@ section:nth-child(even){
 }
 
 .about .row .content h3{
-    color: var(--black);
+    color: var(--blue);
     text-shadow: var(--text-shadow);
     font-size: 4rem;
     line-height: 1.8;
@@ -286,7 +286,7 @@ section:nth-child(even){
 }
 
 .doctors .box-container .box h3{
-    color:var(--black);
+    color:var(--blue);
     font-size: 2.5rem;
 }
 
@@ -342,7 +342,7 @@ section:nth-child(even){
 }
 
 .book .row form h3{
-    color:var(--black);
+    color:var(--blue);
     padding-bottom: 1rem;
     font-size: 3rem;
 }
@@ -353,7 +353,7 @@ section:nth-child(even){
     border-radius: .5rem;
     border:var(--border);
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--blue);
     text-transform: none;
     padding: 1rem;
 
@@ -475,7 +475,7 @@ section:nth-child(even){
 }
 
 .blogs .box-container .box .content h3{
-    color:var(--black);
+    color:var(--blue);
     font-size: 3rem;
 }
 
@@ -494,7 +494,7 @@ section:nth-child(even){
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
-    color:var(--black);
+    color:var(--blue);
     padding: 1rem 0;
 }
 
