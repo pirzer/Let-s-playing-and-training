@@ -46,8 +46,8 @@ body {
 
 /* Common padding */
 .p2 {
-    padding: 2%;
-    padding-bottom: 3%;
+    padding: 0.5%; /* 2% */
+    padding-bottom: revert; /* 3% */
 }
 
 /* End of Common margin */
