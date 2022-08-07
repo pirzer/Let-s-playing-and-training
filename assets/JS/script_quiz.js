@@ -39,7 +39,7 @@ const quizes = [
     },
     {
       question: "Ethics & Law overlap. This is called in Business as…",
-      options: ["Grey Area", "a Drucker Principle: Red Area", "a Deming Principle: Yellow Area", "a Freud Principle: Dark Area"],
+      options: ["a Grey Area", "a Drucker Principle: Red Area", "a Deming Principle: Yellow Area", "a Freud Principle: Dark Area"],
       answers: 0,
     },
     {
