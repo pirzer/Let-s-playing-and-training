@@ -234,6 +234,11 @@ const displayAnswer = () => {
 }
 
 const addScore = () => {
+
+  // NEW
+  const finalScoreImage = document.querySelector("#final-score-image");
+  //NEW 
+
   // Find out the index of the selected button
   selectedButtonIndex = selectedButton.getAttribute("data-index")
   // If the selected button is the correct answer, execute this:
@@ -250,14 +255,16 @@ const addScore = () => {
   if(scorePercent < 81 || myScore.textContent == 0) {
     // Display text 'Better luck next time!'
     scoreText.innerText = 'It does not look promesing, please get in touch with us soon!'
-  
+    finalScoreImage.src = "assets/image/Notgoingwell.gif"
   // If score percentage is less than 50
   if(scorePercent < 61 || myScore.textContent == 0) {
   // Display text 'Better luck next time!'
     scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles!'
+    finalScoreImage.src = "assets/image/wrong1.gif"
   // If score percentage is more than or equal to 50, then show text below
   }} else {
     scoreText.innerText = "Fantastic, Keep your ethic values up!"
+    finalScoreImage.src = "assets/image/CorrectPLUSA.gif"
   }
 };
 
