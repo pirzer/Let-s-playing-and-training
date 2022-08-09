@@ -246,20 +246,18 @@ const addScore = () => {
   } else {
     myScore;
   }
-  // If score percentage is less than 70
-  if(scorePercent < 80 || myScore.textContent == 0) {
+  // If score percentage is less than 50   
+  if(scorePercent < 81 || myScore.textContent == 0) {
     // Display text 'Better luck next time!'
-    scoreText.innerText = 'It does not look promesing, please get in touch with us soon! - Performance below 80%!!'}
-// testing
-      if(scorePercent <= 40 || myScore.textContent == 0) {
-    // Display text the following message, if the Percentage below 40%
-    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles! - Performance below 40%!!'}
-// testing
-      
-      
-// If score percentage is more than or equal to 80%, then show text below
-   else {
-    scoreText.innerText = "Fantastic, Keep your ethic values up! Performance above 80%!!"
+    scoreText.innerText = 'It does not look promesing, please get in touch with us soon!'
+  
+  // If score percentage is less than 50
+  if(scorePercent < 61 || myScore.textContent == 0) {
+  // Display text 'Better luck next time!'
+    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles!'
+  // If score percentage is more than or equal to 50, then show text below
+  }} else {
+    scoreText.innerText = "Fantastic, Keep your ethic values up!"
   }
 };
 
