@@ -121,7 +121,7 @@ const insertTimerText = () => {
   // Give this color background to the text when times up
   timeUp.style.backgroundColor = "rgba(255, 32, 32 , 0.9)";
   // Define font-size to the text when times up
-  timeUp.style.fontSize = "45px";
+  timeUp.style.fontSize = "35px";
 }
 
 const timerCountdown = () => {
