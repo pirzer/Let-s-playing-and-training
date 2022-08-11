@@ -44,11 +44,11 @@
             
     <br>
     <br>
-     <!---   startQuiz();   -->
+     <!---   startQuiz(); label removed from line 50 and 51  -->
      <div class="container1">
         <form class="form" name="form" onsubmit="submitForm(event);">
-           <label><h1 style="text-align: center; width:100%"><b>Please, enter your Nickname below before to start the test</b></h1></label> 
-            <label><h1 style="text-align: center; width:100%"><b>This is mandatory</b></h1></label>
+           <h1 style="text-align: center; width:100%"><b>Please, enter your Nickname below before to start the test</b></h1>
+            <h1 style="text-align: center; width:100%"><b>This is mandatory</b></h1>
             <div class="Name"></div><input type="text" name="nickname" required>
             <small></small><br>   
             <button type="submit" class="sendnickname">Play Quiz</button>
@@ -58,10 +58,14 @@
     <!------------ End of NickName  -->
 
     <!---   Button to return to the main website   -->
+
     <div class="container2">
-        <button type="button" class="returnmainweb"><a href="index.html">Return to main website</a></button>
+        <button onclick="window.location.href='index.html'" class="returnmainweb">Return to main website</button>
     </div>
-    
+
+ <!--   <button type="button" class="returnmainweb"><a href="index.html">Return to main website</a></button> -->
+
+
     <!---   End of Button to return to the main website   -->
     
   <script src="assets/JS/js_nickname2.js"></script>
