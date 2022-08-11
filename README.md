@@ -96,7 +96,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 ## Testing 
 -   The following images show the test results:   
     
-    ### Am I responsive
+    ### Am I responsive. Users can navigate through the websites, and complete the quiz from different devices such as PC Desktop, Laptop, Table, and Mobile. See images below.
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive1-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive2-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive3-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
@@ -107,7 +107,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive8-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
 
 
-    ### Google Chrome "lighhouse" - Test Report - PC Desk
+    ### Google Chrome "lighhouse" - Test Report - PC Desk - index.html, index_nickname2.html, & index_quiz.html
 -   ![PC Desk](/assets/image/lighthouse_report_desktop.JPG "PC Desktop Test")
 -   ![PC Desk](/assets/image/lighthouse_report_desktop_nickname.JPG "PC Desktop Test") 
 -   ![PC Desk](/assets/image/lighthouse_report_desktop_quiz.JPG "PC Desktop Test") 
@@ -115,7 +115,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 
 
 
-    ### Google Chrome "lighhouse" - Test Report - Mobile
+    ### Google Chrome "lighhouse" - Test Report - Mobile - index.html, index_nickname2.html, & index_quiz.html
 -   ![PC Desk](/assets/image/lighthouse_report_mobile.JPG "Mobile Test")
 -   ![PC Desk](/assets/image/lighthouse_report_mobile_nickname.JPG "Mobile Test")
 -   ![PC Desk](/assets/image/lighthouse_report_mobile_quiz.JPG "Mobile Test") 
@@ -140,10 +140,10 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 ## Coding Validation - HTML & CSS
 -   The following images show the test results without warnings or error messages:  
 
-    ### HTML Checker report
--   ![HTML](/assets/image/HTML_REPORT_W3_Index.JPG "HTML")  
--   ![HTML](/assets/image/HTML_REPORT_W3_nickname2.JPG "HTML")
--   ![HTML](/assets/image/HTML_REPORT_W3_quiz.JPG "HTML")  
+    ### HTML - Checker report
+-   ![HTML](/assets/image/HTML-REPORT-W3-index "HTML")  
+-   ![HTML](/assets/image/HTML-REPORT-W3-nickname2.JPG "HTML")
+-   ![HTML](/assets/image/HTML-REPORT-W3-quiz.JPG "HTML")  
 
     ### CSS - Checker Report 
 -   ![CSS](/assets/image/CSS_REPORT_W3_nickname2_style2.JPG "CSS")  
