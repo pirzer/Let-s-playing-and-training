@@ -141,7 +141,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 -   The following images show the test results without warnings or error messages:  
 
     ### HTML - Checker report
--   ![HTML](/assets/image/HTML-REPORT-W3-index "HTML")  
+-   ![HTML](/assets/image/HTML-REPORT-W3-index.JPG "HTML")
 -   ![HTML](/assets/image/HTML-REPORT-W3-nickname2.JPG "HTML")
 -   ![HTML](/assets/image/HTML-REPORT-W3-quiz.JPG "HTML")  
 
