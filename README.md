@@ -153,7 +153,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 
 ## Coding Validation - Javascript
 -   The results are as follow: 
--   ![JS](/assets/image/JS_userdetails_report.JPG "CSS")
+-   ![JS](/assets/image/JS-userdetails-report-jshint.JPG "CSS") 
 -   ![JS](/assets/image/JS_quiz_report_jshint.JPG "CSS") 
 -   ![JS](/assets/image/JS_nickname2_report_jshint.JPG "CSS")  
 
@@ -165,7 +165,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 -   All sections show up while the user[s] scroll up/down it.
 -   See the following images:  
 
-![Scrolling up/down](/assets/images/scroll%20down%201.JPG "CSS")  
+![Scrolling up/down](/assets/image/JS-userdetails-report-jshint.JPG "CSS")  
 ![Scrolling up/down](/assets/images/scroll%20down%202.JPG "CSS")  
 ![Scrolling up/down](/assets/images/scroll%20up.JPG "CSS")  
 
