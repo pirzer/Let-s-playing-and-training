@@ -165,9 +165,11 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 -   All sections show up while the user[s] scroll up/down it.
 -   See the following images:  
 
-![Scrolling up/down](/assets/image/JS-userdetails-report-jshint.JPG "CSS")  
-![Scrolling up/down](/assets/images/scroll%20down%202.JPG "CSS")  
-![Scrolling up/down](/assets/images/scroll%20up.JPG "CSS")  
+![Scrolling up/down](assets/image/scrolling-up-index.JPG "CSS")
+![Scrolling up/down](assets/image/scrolling-central-index.JPG "CSS")
+![Scrolling up/down](assets/image/scrolling-down-index.JPG "CSS")  
+
+
 
 ## Testing hovering
 -   The Website is performing correctly. The hovering tests done are as follow:  
@@ -175,8 +177,11 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 -   6 x Images from Our Team section work perfectly.
 -   Refresh website
 -   See the following images:  
-![Scrolling up/down](/assets/images/hover%20test%201.JPG "CSS") 
-![Scrolling up/down](/assets/images/hover%20test%202.jpg "CSS")  
+Before
+![Scrolling up/down](/assets/image/TEST-hover-before.JPG "CSS")
+After
+![Scrolling up/down](/assets/image/TEST-hover-after.JPG "CSS") 
+
 
 ## Deployment 
 -   The following steps were performed to complete the deployment.  
