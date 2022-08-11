@@ -1,11 +1,12 @@
 /*jshint esversion: 6 */  
-/* ----- Pages & Container to display/hide/set attribute ----- */
+/* ----- Container & Pages to show/hide/set attribute ----- */
 const getStarted = document.querySelector(".get-started");
 const mainQuiz = document.querySelector(".main-quiz");
 const questionAnswers = document.querySelector(".qa-container");
 const finalScore = document.querySelector(".final-score");
 const timerContainer = document.querySelector(".timer");
 const progressBar = document.querySelector(".progress-bar");
+
 /* ----- Buttons ----- */
 const startButton = document.querySelector("#start-btn");
 const optionButtons = document.querySelectorAll(".option");
@@ -14,14 +15,16 @@ const nextButton = document.querySelector(".next-question");
 const finishButton = document.querySelector(".finish-quiz");
 const restartButton = document.querySelector("#restart-btn");
 const quitButton = document.querySelectorAll(".quit-quiz");
-/* ----- Variables to manipulate innerText ----- */
+
+/* ----- Variables to use innerText ----- */
 let myScore = document.querySelector(".my-score");
 let totalScore = document.querySelector(".total-score");
 let scoreText = document.querySelector(".display-score h3");
 let currentQuestion = document.querySelector(".current-question");
 let totalQuestions = document.querySelector(".total-questions");
 let timer = document.querySelector(".timer span");
-/* ----- Initial declaration ----- */
+
+/* ----- First declaration ----- */
 let displayQuiz;
 let timerInterval;
 let timeUp = document.createElement("h2");
@@ -31,7 +34,8 @@ let selectedButtonIndex;
 let correctAnswerButton;
 let correctButtonIndex;
 let scorePercent;
-/* ----- Quiz questions ----- */
+
+/* ----- Quiz questions below----- */
 const quizes = [
     {
       question: "Who is responsible for ethics in an organisation?",
@@ -62,7 +66,7 @@ const quizes = [
 
 
 
-/* Display Nickname to the QUIZ */
+/* Display Nickname to QUIZ page */
 function submitForm(e) {
     e.preventDefault();
     let Name = document.forms["form"]["nickname"].value;
@@ -71,10 +75,10 @@ function submitForm(e) {
     location.href = "index_quiz.html";
 
 }
-/* Nickname details to the QUIZ */ 
+/* End of Nickname details to QUIZ page */ 
 
 
-/* ----- Functions to manipulate styles -----*/
+/* ----- Functions to use styles -----*/
 const disableButton = (button) => {
   // Make button disabled by adding a disabled attribute to the button
   button.setAttribute("disabled", "");
@@ -107,7 +111,7 @@ const optionClicked = (button) => {
   enableButton(checkButton);
 }; // semicolon missed.
 
-/* ----- Functions to set Timer -----*/
+/* ----- Functions: setting Timer -----*/
 const insertTimerText = () => {
   // When timer countdown to 0, ensure the text shows 0
   timer.innerText = 0;
@@ -163,7 +167,7 @@ const timerCountdown = () => {
   }, 1000); // semicolon missed.
 }; // semicolon missed.
 
-/* ----- Function to update Progress Bar -----*/
+/* ----- Function: Updating Progress Bar -----*/
 const updateProgressBar = () => {
   // Progress bar 'value' is 1 less than current question because, eg: when you're on question 2, you have only completed 1 question.
   calculateProgress = ((currentQuestion.textContent - 1) / totalQuestions.textContent)*100;
@@ -171,7 +175,7 @@ const updateProgressBar = () => {
   progressBar.setAttribute("value", calculateProgress);
 }; // semicolon missed.
 
-/* ----- Logical process functions -----*/
+/* ----- Process functions -----*/
 const startQuiz = () => {
   // Hide the get started button, and display timer
   getStarted.style.display ="none";
@@ -236,9 +240,9 @@ const displayAnswer = () => {
 
 const addScore = () => {
 
-  // NEW
+  // Visual feedback 
   const finalScoreImage = document.querySelector("#final-score-image");
-  //NEW 
+   
 
   // Find out the index of the selected button
   selectedButtonIndex = selectedButton.getAttribute("data-index"); // semicolon missed.
@@ -270,7 +274,7 @@ const addScore = () => {
 };
 
 const nextQuestion = () => {
-  // Display the main quiz content
+  // Show the main quiz content
   mainQuiz.style.display = "inline";
   // Remove the 'Times Up!' text
   timeUp.textContent = "";
@@ -359,11 +363,11 @@ finishButton.addEventListener("click", () => {
 if (restartButton) {
 restartButton.addEventListener("click", restartQuiz);
 
-// Loop over quit quiz buttons (There are 2)
+// Loop over quit quiz buttons (2 loops)
 quitButton.forEach(button => {
   // When quit quiz button is clicked, execute this:
   button.addEventListener("click", () => {
-    // Display get started content, hide main quiz and final score content
+    // Show getting started content, hide main quiz and final score content
     getStarted.style.display ="flex";
     mainQuiz.style.display="none";
     finalScore.style.display="none";
