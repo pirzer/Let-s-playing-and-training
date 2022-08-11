@@ -9,7 +9,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 
 <font color="blue">Training Solutions!!!</font>Link to see this project live: **[<font color="blue">Training Solutions</font>](https://pirzer.github.io/Let-s-playing-and-training/index.html#home)**.  
 
-![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/Training_Solutions_Intro.jpg "Training Solutions")  
+![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/TrainingSolutionsIntro.jpg "Training Solutions")  
 
 
 ## <font color="blue">Contents</font>  
