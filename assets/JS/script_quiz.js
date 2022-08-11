@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */  
 /* ----- Pages & Container to display/hide/set attribute ----- */
 const getStarted = document.querySelector(".get-started");
 const mainQuiz = document.querySelector(".main-quiz");
@@ -79,7 +80,7 @@ const disableButton = (button) => {
   button.setAttribute("disabled", "");
   // Set cursor style back to default
   button.style.cursor = "auto";
-}
+}; // semicolon missed.
 
 const enableButton = (button) => {
   // Enable the button by removing the disabled attribute from the button
@@ -104,7 +105,7 @@ const optionClicked = (button) => {
   button.style.backgroundColor = "rgba(242, 44, 173, 0.71)"; //"color enables when is clicked on the choice
   // When any option is clicked, enable the check answer button
   enableButton(checkButton);
-}
+}; // semicolon missed.
 
 /* ----- Functions to set Timer -----*/
 const insertTimerText = () => {
@@ -122,7 +123,7 @@ const insertTimerText = () => {
   timeUp.style.backgroundColor = "rgba(255, 32, 32 , 0.9)";
   // Define font-size to the text when times up
   timeUp.style.fontSize = "35px";
-}
+}; // semicolon missed.
 
 const timerCountdown = () => {
   // Every 1000 milliseconds/ 1 second interval, execute this:
@@ -142,7 +143,7 @@ const timerCountdown = () => {
         checkButton.style.display ="none";
         nextButton.style.display ="none";
         finishButton.style.display="inline";
-      })
+      }); // semicolon missed.
       // If nothing is selected after time is up execute this:
       if(selectedButton == undefined) {
         // If it is the last question, execute this:
@@ -159,8 +160,8 @@ const timerCountdown = () => {
       // Stop the timer
       clearInterval(timerInterval);
     }
-  }, 1000)
-}
+  }, 1000); // semicolon missed.
+}; // semicolon missed.
 
 /* ----- Function to update Progress Bar -----*/
 const updateProgressBar = () => {
@@ -168,7 +169,7 @@ const updateProgressBar = () => {
   calculateProgress = ((currentQuestion.textContent - 1) / totalQuestions.textContent)*100;
   // Update the progress bar 'value' accordingly
   progressBar.setAttribute("value", calculateProgress);
-}
+}; // semicolon missed.
 
 /* ----- Logical process functions -----*/
 const startQuiz = () => {
@@ -187,11 +188,11 @@ const startQuiz = () => {
   question.innerText = quizes[0].question;
   // Loop through each button and display the options text in correct order
   for(i = 0; i < optionButtons.length; i++) {
-    optionButtons.item(i).innerText = quizes[0].options[i]
+    optionButtons.item(i).innerText = quizes[0].options[i]; // semicolon missed.
   }
   // increase the current question count from 0 to 1
   currentQuestion.innerText++;
-}
+}; // semicolon missed.
 
 //   if(currentQuestion.textContent >= quizes.length) { - it was added     finishButton.style.display = "inline" to line209
 
@@ -200,17 +201,17 @@ const checkAnswer = () => {
   // If current question is the last question, execute this:
   if(currentQuestion.textContent >= quizes.length) {
     // Hide next question and check answer button, and display finish quiz button
-    nextButton.style.display="none"
-    checkButton.style.display="none"
-    finishButton.style.display = "inline"
+    nextButton.style.display="none"; // semicolon missed.
+    checkButton.style.display="none"; // semicolon missed.
+    finishButton.style.display = "inline"; // semicolon missed.
   } else {
     // If not the last question, hide check answer button, and display next button & finish button
     checkButton.style.display = "none";
     nextButton.style.display="inline";
-    finishButton.style.display = "inline"
+    finishButton.style.display = "inline"; // semicolon missed.
 
-  };
-  selectedButton.style.backgroundColor = "rgba(255, 0, 78, 0.99)"   /* Wrong answer */
+  } // semicolon removed.
+  selectedButton.style.backgroundColor = "rgba(255, 0, 78, 0.99)" ;  /* Wrong answer - semicolon missed.*/
   // Display answer
   displayAnswer();
   // Ensure thet imer countdown is stopped
@@ -219,19 +220,19 @@ const checkAnswer = () => {
   addScore();
   // Disable each option button
   optionButtons.forEach(eachButton => {
-    disableButton(eachButton)
+    disableButton(eachButton);
   });
 };
 
 
 const displayAnswer = () => {
   // Find out the correct answer button where it matches answer in quizes array
-  correctAnswerButton = document.querySelector(`[data-index="${quizes[currentQuestion.textContent-1].answers}"]`)
+  correctAnswerButton = document.querySelector(`[data-index="${quizes[currentQuestion.textContent-1].answers}"]`); // semicolon missed.
   // Find the correct answer button's index
-  correctButtonIndex = quizes[currentQuestion.textContent-1].answers
+  correctButtonIndex = quizes[currentQuestion.textContent-1].answers; // semicolon missed.
   // Change the correct answer button to this color
   correctAnswerButton.style.backgroundColor = "rgb(68, 240, 68)"; /* Correct answer  */
-}
+}; // semicolon missed.
 
 const addScore = () => {
 
@@ -240,13 +241,13 @@ const addScore = () => {
   //NEW 
 
   // Find out the index of the selected button
-  selectedButtonIndex = selectedButton.getAttribute("data-index")
+  selectedButtonIndex = selectedButton.getAttribute("data-index"); // semicolon missed.
   // If the selected button is the correct answer, execute this:
   if(selectedButtonIndex == correctButtonIndex) {
     // Increase the score by 1 each time
     myScore.innerText++;
     // Find out the score percentage according to score obtained
-    scorePercent = (myScore.textContent / totalQuestions.textContent) * 100
+    scorePercent = (myScore.textContent / totalQuestions.textContent) * 100; // semicolon missed.
   // If it's not the correct answer, then just leave it as it is
   } else {
     myScore;
@@ -254,17 +255,17 @@ const addScore = () => {
   // If score percentage is less than 50   
   if(scorePercent < 81 || myScore.textContent == 0) {
     // Display text 'Better luck next time!'
-    scoreText.innerText = 'It does not look promesing, please get in touch with us soon!'
-    finalScoreImage.src = "assets/image/Notgoingwell.gif"
+    scoreText.innerText = 'It does not look promising, please get in touch with us soon!'; // semicolon missed.
+    finalScoreImage.src = "assets/image/Notgoingwell.gif"; // semicolon missed.
   // If score percentage is less than 50
   if(scorePercent < 61 || myScore.textContent == 0) {
   // Display text 'Better luck next time!'
-    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles!'
-    finalScoreImage.src = "assets/image/wrong1.gif"
+    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles!'; // semicolon missed.
+    finalScoreImage.src = "assets/image/wrong1.gif"; // semicolon missed.
   // If score percentage is more than or equal to 50, then show text below
   }} else {
-    scoreText.innerText = "Fantastic, Keep your ethic values up!"
-    finalScoreImage.src = "assets/image/CorrectPLUSA.gif"
+    scoreText.innerText = "Fantastic, Keep your ethic values up!"; // semicolon missed.
+    finalScoreImage.src = "assets/image/CorrectPLUSA.gif"; // semicolon missed.
   }
 };
 
@@ -292,7 +293,7 @@ const nextQuestion = () => {
   }
   // Change all option buttons to the appropriate text
   for(i = 0; i < optionButtons.length; i++) {
-    optionButtons.item(i).innerText = quizes[currentQuestion.textContent - 1].options[i]
+    optionButtons.item(i).innerText = quizes[currentQuestion.textContent - 1].options[i]; // semicolon missed.
   }
 };
 
@@ -303,8 +304,8 @@ const restartQuiz = () => {
   timer.innerText = 8; //15 second to 10, or 8 seconds
   // Enable each option button, and remove backgound color
   optionButtons.forEach(eachButton => {
-    enableButton(eachButton)
-    removeBackgroundStyle(eachButton)
+    enableButton(eachButton); // semicolon missed.
+    removeBackgroundStyle(eachButton); // semicolon missed.
   });
   // Display check answer button, hide finish quiz button and final score content
   checkButton.style.display = "inline";
@@ -313,7 +314,7 @@ const restartQuiz = () => {
   // Update progress bar accordingly and start quiz
   updateProgressBar();
   startQuiz();
-}
+}; // semicolon missed.
 
 
 /* ----- Buttons event listeners -----*/
@@ -334,10 +335,11 @@ nextButton.addEventListener("click", () => {
   nextQuestion();
   removeBackgroundStyle();
   optionButtons.forEach(eachButton => {
-    enableButton(eachButton)
-  })
-})
-};
+    enableButton(eachButton); // semicolon missed.
+  }); // semicolon missed.
+}); // semicolon missed.
+} // semicolon removed.
+
 
 // When finish quiz button is clicked
 if (finishButton) {
@@ -351,8 +353,8 @@ finishButton.addEventListener("click", () => {
   totalScore.innerText = totalQuestions.textContent;
   // Stop timer
   clearInterval(timerInterval);
- })
-};
+ }); // semicolon missed
+} // semicolon removed
 // When restart button is clicked, execute this:
 if (restartButton) {
 restartButton.addEventListener("click", restartQuiz);
@@ -367,7 +369,7 @@ quitButton.forEach(button => {
     finalScore.style.display="none";
     // Refresh page and go to main website
     location.href = "index_nickname2.html";
-})
-})
-};
+}); // semicolon missed
+}); // semicolon missed
+}  // semicolon removed
 

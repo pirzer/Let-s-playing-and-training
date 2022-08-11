@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */  
 const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
@@ -18,7 +19,7 @@ const checkUsername = () => {
     if (!isRequired(username)) {
         showError(usernameEl, 'Please, enter your full name, do not be afraid.');
     } else if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `Name or Fullname must be between ${min} and ${max} characters.`)
+        showError(usernameEl, `Name or Fullname must be between ${min} and ${max} characters.`); //missing semicolumn
     } else {
         showSuccess(usernameEl);
         valid = true;
@@ -33,7 +34,7 @@ const checkEmail = () => {
     if (!isRequired(email)) {
         showError(emailEl, 'Email cannot be blank.');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
+        showError(emailEl, 'Email is not valid.'); //missing semicolumn
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -114,7 +115,7 @@ const showSuccess = (input) => {
     // hide the error message
     const error = formField.querySelector('small');
     error.textContent = '';
-}
+};  // missing semicolumn
 
 if (fOrm) {
      fOrm.addEventListener('submit', function (e) {
@@ -138,8 +139,8 @@ if (fOrm) {
     if (isFormValid) {
      
     }
-})
-};
+});  /* ;	missing semicolon */
+}  /* ;	semicolon removed */
 
 
 const debounce = (fn, delay = 500) => {
@@ -151,7 +152,7 @@ const debounce = (fn, delay = 500) => {
         }
         // setup a new timer
         timeoutId = setTimeout(() => {
-            fn.apply(null, args)
+            fn.apply(null, args); /* ;	missing semicolon, added it */
         }, delay);
     };
 };
@@ -173,4 +174,4 @@ fOrm.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
-};
+} /* ;	semicolon removed */
