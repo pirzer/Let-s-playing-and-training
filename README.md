@@ -122,14 +122,23 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 
 
 
-    ### Testingbot - Test Report - Mobile
--   ![PC Desk](/assets/images/Mobile%20Test%201.JPG "Mobile Test")  
+    ### Testingbot - Test Report - Chrome
+-   ![PC Desk](/assets/image/Testingbot-index.JPG "Desktop Test")  
+-   ![PC Desk](/assets/image/Testingbot-index.JPG "Desktop Test")  
+
+
+
+
+
+
+
+
 
     ### Testingbot - Test Report - Tablet
--   ![PC Desk](/assets/images/Tablet%20test%202.JPG "Tablet Test")
+-   ![Tablet](/assets/image/Testingbot-index.JPG "Mobile Test")  
 
     ### Testingbot - Test Report - FireFox
--   ![PC Desk](/assets/images/firefox.JPG "FireFox")  
+-   ![Mobile](/assets/images/firefox.JPG "FireFox")  
 
     ### Testingbot - Test Report - Opera
 -   ![PC Desk](/assets/images/opera.JPG "Opera")  
