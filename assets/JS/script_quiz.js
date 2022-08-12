@@ -264,7 +264,7 @@ const addScore = () => {
   // If score percentage is less than 50
   if(scorePercent < 61 || myScore.textContent == 0) {
   // Display text 'Better luck next time!'
-    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Throubles!'; // semicolon missed.
+    scoreText.innerText = 'Our Experts will contact you ASAP, you are in Troubles!'; // semicolon missed.
     finalScoreImage.src = "assets/image/wrong1.gif"; // semicolon missed.
   // If score percentage is more than or equal to 50, then show text below
   }} else {
