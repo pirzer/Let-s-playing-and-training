@@ -155,9 +155,15 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 
 
 ## Coding Validation - Javascript - jshint
--   The results are as follow: 
--   ![JS](/assets/image/JS-userdetails-report-jshint.JPG "CSS") 
--   ![JS](/assets/image/JS_quiz_report_jshint.JPG "CSS") 
+-   The results are as follow:
+
+File: userdetails.js 
+-   ![JS](/assets/image/JS-userdetails-report-jshint.JPG "CSS")
+
+File: script_quiz.js 
+-   ![JS](/assets/image/JS_quiz_report_jshint.JPG "CSS")
+
+File: js_nickname2.js 
 -   ![JS](/assets/image/JS_nickname2_report_jshint.JPG "CSS")  
 
 ## Testing scrolling
