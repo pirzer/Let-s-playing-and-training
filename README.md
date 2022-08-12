@@ -96,71 +96,65 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 ## Testing 
 -   The following images show the test results:   
     
-    ### Am I responsive. Users can navigate through the websites, and complete the quiz from different devices such as PC Desktop, Laptop, Table, and Mobile. See images below.
+    ### Am I responsive?. Users can navigate through the websites, and complete the quiz from different devices such as PC Desktop, Laptop, Table, and Mobile. See images below.
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive1-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
--   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive2-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
+### Displaying menu for tablet & mobile devices.
+-   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive2-test.JPG "PC Desk, Laptop, Tablet, and Mobile")
+### Forms for personal details and nicknames. Validation is based on regular expressions. The user(s) can enter a nickname before taking the test, if not, the quiz can not be completed.
+
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive3-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
--   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive4-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
--   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive5-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
--   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive6-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
+-   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive4-test.JPG "PC Desk, Laptop, Tablet, and Mobile") 
+### Displaying the nickname.
+-   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive5-test.JPG "PC Desk, Laptop, Tablet, and Mobile")
+### Showing when the times up, input when there 0 answers, input when there correct & correct answers.  
+-   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive6-test.JPG "PC Desk, Laptop, Tablet, and Mobile")
+### Displaying images depending on the score, i.e., 1 to 3 correct answers out of 5 questions, 4 out of 5, and 5 out of 5. 
 -   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive7-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
--   ![PC Desk, Laptop, Tablet, mobile Demo](/assets/image/responsive8-test.JPG "PC Desk, Laptop, Tablet, and Mobile")  
 
-
-    ### Google Chrome "lighhouse" - Test Report - PC Desk - index.html, index_nickname2.html, & index_quiz.html
+### Google Chrome "lighhouse" - Test Report - PC Desk - index.html, index_nickname2.html, & index_quiz.html
 -   ![PC Desk](/assets/image/lighthouse_report_desktop.JPG "PC Desktop Test")
 -   ![PC Desk](/assets/image/lighthouse_report_desktop_nickname.JPG "PC Desktop Test") 
 -   ![PC Desk](/assets/image/lighthouse_report_desktop_quiz.JPG "PC Desktop Test") 
 
-
-
-
-    ### Google Chrome "lighhouse" - Test Report - Mobile - index.html, index_nickname2.html, & index_quiz.html
+### Google Chrome "lighhouse" - Test Report - Mobile - index.html, index_nickname2.html, & index_quiz.html
 -   ![PC Desk](/assets/image/lighthouse_report_mobile.JPG "Mobile Test")
 -   ![PC Desk](/assets/image/lighthouse_report_mobile_nickname.JPG "Mobile Test")
 -   ![PC Desk](/assets/image/lighthouse_report_mobile_quiz.JPG "Mobile Test") 
-
-
-
-    ### Testingbot - Test Report - Chrome
+### Testingbot - Test Report - Browsers
+-   ![PC Desk](/assets/image/Testingbot-desktop-browsers.JPG "Desktop Test") 
 -   ![PC Desk](/assets/image/Testingbot-index.JPG "Desktop Test")  
--   ![PC Desk](/assets/image/Testingbot-index.JPG "Desktop Test")  
-
-
-
-
-
-
-
-
-
-    ### Testingbot - Test Report - Tablet
--   ![Tablet](/assets/image/Testingbot-index.JPG "Mobile Test")  
-
-    ### Testingbot - Test Report - FireFox
--   ![Mobile](/assets/images/firefox.JPG "FireFox")  
-
-    ### Testingbot - Test Report - Opera
--   ![PC Desk](/assets/images/opera.JPG "Opera")  
-
-    ### Testingbot - Test Report - Edge
--   ![PC Desk](/assets/images/edge.JPG "Edge")  
+-   ![PC Desk](assets/image/Testingbot-nickname2.JPG "Desktop Test")  
+-   ![PC Desk](assets/image/Testingbot-quick.JPG "Desktop Test")  
+-   ![PC Desk](assets/image/Testingbot-index-opera.JPG "Desktop Test")  
+-   ![PC Desk](assets/image/Testingbot-nickname-edge.JPG "Desktop Test") 
+-   ![PC Desk](assets/image/Testingbot-quiz-opera.JPG "Desktop Test")  
+-   ![PC Desk](assets/image/Testingbot-quizedge.JPG "Desktop Test")  
+### Testingbot - Test Report - Mobile Manufactures
+-   ![Mobile](/assets/image/Testingbot-index-mobile-test.JPG "Mobile") 
+-   ![Mobile](/assets/image/Testingbot-nickname-mobile-test.JPG "Mobile")
+-   ![Mobile](/assets/image/Testingbot-quiz-mobile-test.JPG "Mobile")
+-   ![Mobile](/assets/image/Testingbot-quiz-mobile-test-2.JPG "Mobile")    
 
 ## Coding Validation - HTML & CSS
--   The following images show the test results without warnings or error messages:  
-
-    ### HTML - Checker report
+-   The following images show the test results messages:  
+### HTML - Checker report - W3C
+####  index.html
 -   ![HTML](/assets/image/HTML-REPORT-W3-index.JPG "HTML")
+####  index_nickname2.html
 -   ![HTML](/assets/image/HTML-REPORT-W3-nickname2.JPG "HTML")
+####  index_quiz.html
 -   ![HTML](/assets/image/HTML-REPORT-W3-quiz.JPG "HTML")  
 
-    ### CSS - Checker Report 
--   ![CSS](/assets/image/CSS_REPORT_W3_nickname2_style2.JPG "CSS")  
+### CSS - Checker Report - W3C
+####  style.css 
 -   ![CSS](/assets/image/CSS_REPORT_W3_Style.JPG "CSS")  
+####  nickname2.css 
+-   ![CSS](/assets/image/CSS_REPORT_W3_nickname2_style2.JPG "CSS")
+####  style_quiz.css 
 -   ![CSS](/assets/image/CSS_REPORT_W3_quiz.JPG "CSS")  
 
 
-## Coding Validation - Javascript
+## Coding Validation - Javascript - jshint
 -   The results are as follow: 
 -   ![JS](/assets/image/JS-userdetails-report-jshint.JPG "CSS") 
 -   ![JS](/assets/image/JS_quiz_report_jshint.JPG "CSS") 
@@ -183,7 +177,7 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 ## Testing hovering
 -   The Website is performing correctly. The hovering tests done are as follow:  
 
--   6 x Images from Our Team section work perfectly.
+-   3 x Images from Our Team section work perfectly.
 -   Refresh website
 -   See the following images:  
 Before
@@ -205,30 +199,43 @@ After
 ## Credits 
 
 ### Content 
-    - All the information displayed was written by the developer.  
+    - All the info displayed was written and designed by the developer.
 
-### Source of Images and Video 
+### Source of Images
+- The websites of images used are as follow:
 
-        - https://rec.ie/environmental-eng/  
-        - https://energynext.co.th/category/news/page/35/   
-        - https://www.altenergymag.com/storyfeed/solar-wind/    
-        - https://www.greentechmedia.com/articles/read/operations-and-maintenance-the-key-wind-farm-profitability  
-        - https://www.youtube.com/watch?v=wpFUAxInzAc  
-          
+    - https://giphy.com/explore/files
+    - https://www.shutterstock.com/
+    - https://www.megapixl.com/
+    - https://www.freeimages.com/
 
 ### Code
 
 -   The following websites have been the main support and sources for this project:  
 
-        - https://github.com/codingmarket07/Responsive-Website-Design-  
-        - https://github.com/m1key-m/grinders-coffee-house  
-        - https://github.com/jdquerales/MilestoneProject_1  
-        - https://www.youtube.com/watch?v=j_lo8rvpsh4  
-        - https://www.youtube.com/watch?v=j_lo8rvpsh4   
-        
-        - https://www.learn-codes.net/javascript/javascript-function-for-login-form-submit/#javascript-form-validation
-       
-
+    - https://github.com/codingmarket07/Responsive-Website-Design-
+    - https://github.com/codingnepal   
+    - https://www.learn-codes.net/javascript/javascript-function-for-login-form-submit/#javascript-form-validation
+    - https://www.learn-codes.net/javascript/javascript-function-for-login-form-submit/#javascript-form-validation
+    - https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
+    - https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp
+    - https://bobbyhadz.com/blog/javascript-addeventlistener-is-not-a-function
+    - https://www.regular-expressions.info/email.html
+    - https://stackoverflow.com/questions/42866159/arrow-function-syntax-is-only-available-in-es6-use-esversion-6
+    - https://stackoverflow.com/questions/63093024/unexpected-token-at-line-1
+    - https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const/37472928#37472928
+    - https://stackoverflow.com/questions/69300061/how-do-i-fix-this-validator-error-the-element-a-must-not-appear-as-a-descenda/69300191#69300191
+    - https://stackoverflow.com/questions/50068995/element-h3-not-allowed-as-child-of-element-label-in-this-context-html
+    - https://stackoverflow.com/questions/32491347/bad-value-for-attribute-action-on-element-form-must-be-non-empty
+    - https://stackoverflow.com/questions/22599801/validation-error-element-a-not-allowed-as-child-of-element-ul-in-this-context
+    - https://stackoverflow.com/questions/20189379/javascript-operator-as-if-statement
+    - https://stackoverflow.com/questions/64036741/getting-results-from-a-javascript-function-to-display-in-html-element-i-can-get
+    - https://code-boxx.com/pass-variables-between-pages-javascript/
+    - https://www.faqcode4u.com/faq/7300/transfer-data-from-one-html-file-to-another
+    - https://imagekit.io/blog/how-to-resize-image-in-html/
+    - https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
+    -  https://freefrontend.com/css-buttons/
+    -  https://fdossena.com/?p=html5cool/buttons/i.frag        
 
 ### Acknowledgements
 
