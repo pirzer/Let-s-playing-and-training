@@ -172,8 +172,6 @@ Finally, the website's design is aimed to be user friendly and responsive to dif
 ![Scrolling up/down](assets/image/scrolling-central-index.JPG "CSS")
 ![Scrolling up/down](assets/image/scrolling-down-index.JPG "CSS")  
 
-
-
 ## Testing hovering
 -   The Website is performing correctly. The hovering tests done are as follow:  
 
@@ -184,7 +182,6 @@ Before
 ![Scrolling up/down](/assets/image/TEST-hover-before.JPG "CSS")
 After
 ![Scrolling up/down](/assets/image/TEST-hover-after.JPG "CSS") 
-
 
 ## Deployment 
 -   The following steps were performed to complete the deployment.  
