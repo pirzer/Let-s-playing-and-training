@@ -1,7 +1,7 @@
 # <font color="blue">Training Solutions</font>  
 
 This academic project shows a **Training Consulting's website** that offers Training to companies about **Ethics And Code Of Conduct, Bullying & Harassment, Sexual Harassment, Diversity & Inclusion, Social Media Policy, and Information Security**. The colours, images, and Google Map have been chosen to create a company's image as a business that is committed and working to avoid and/or mitigate work enviroment issues between CEOs, Plant Managers, HR Departments, and Employees. The structure of this project consists of 3 websites as follows:
-1. Website: Company presentation, services, customer's feedback, and link to quiz.
+1. Website: Company presentation, services, customer's feedback, SME, and link to take a quiz.
 2. Website: Quiz Form for users.
 3. Website: Quiz online: questions, multiple choices, and results.
 
@@ -238,7 +238,8 @@ After
     - https://imagekit.io/blog/how-to-resize-image-in-html/
     - https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
     -  https://freefrontend.com/css-buttons/
-    -  https://fdossena.com/?p=html5cool/buttons/i.frag        
+    -  https://fdossena.com/?p=html5cool/buttons/i.frag
+    - https://dig3110.wordpress.com/2020/03/14/changing-html-elements-with-javascript/        
 
 ### Acknowledgements
 
