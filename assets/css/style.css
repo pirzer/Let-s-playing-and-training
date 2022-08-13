@@ -26,6 +26,11 @@
 
 /* NEW NEW  DROPDOWN MENUE FOR MOBILE AND TABLET using CHECKBOX*/
 
+.fas {
+    color: rgb(240, 244, 244);
+}
+
+
 nav {
 	position: fixed;
 	z-index: 10;
@@ -93,10 +98,10 @@ nav .icon-coolburger {
 	top: 50%;
 	transform: translateY(-50%);
 }
-nav .icon-coolburger .line {
+nav .icon-coolburger .line {    /* changing line to fas line 101 */
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: transparent;  /* #fff to red */
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
@@ -132,17 +137,8 @@ nav .icon-coolburger .line {
 	}
 	nav .icon-coolburger {
 		display: block;
-	}
-	nav :checked ~ .icon-coolburger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-coolburger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-coolburger .line:nth-child(2) {
-		opacity: 0;
-	}
-	
+	} 
+
 }
 
 html{ 
